@@ -7,6 +7,7 @@ module.exports = {
     "./src/pages/Erfolge.html",
     "./src/pages/Mandantenstimmen.html",
     "./src/pages/Blog_News.html",
+    "./src/partials/header.html",
   ],
   theme: {
     extend: {
@@ -32,14 +33,17 @@ module.exports = {
         accent: "#C49E2A", // etwas dunkleres Gold
       },
       fontSize: {
-        h1: ["32px", { lineHeight: "1.2" }],
-        h2: ["24px", { lineHeight: "1.3" }],
-        p: ["18px", { lineHeight: "1.3" }],
-        btn: ["16px", { lineHeight: "1.3" }],
+        h1: ["2rem", { lineHeight: "1.2" }],
+        h2: ["1.5rem", { lineHeight: "1.3" }],
+        p: ["1.125rem", { lineHeight: "1.3" }],
+        btn: ["1rem", { lineHeight: "1.3" }],
       },
       fontFamily: {
         sans: ["Montserat", "ui-sans-serif", "system-ui"],
         serif: ["Merriweather", "ui-serif", "Georgia"],
+      },
+      screens: {
+        custom: "70rem",
       },
     },
   },

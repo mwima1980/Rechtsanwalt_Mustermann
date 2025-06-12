@@ -722,6 +722,14 @@ a[aria-current="page"] {
   text-underline-offset: 4px;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
 }
@@ -730,12 +738,64 @@ a[aria-current="page"] {
   top: 0px;
 }
 
+.left-2\/4 {
+  left: 50%;
+}
+
+.left-44 {
+  left: 11rem;
+}
+
+.top-9 {
+  top: 2.25rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.left-12 {
+  left: 3rem;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-2\/4 {
+  top: 50%;
+}
+
+.top-24 {
+  top: 6rem;
+}
+
+.left-3\/4 {
+  left: 75%;
+}
+
 .z-50 {
   z-index: 50;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-16 {
@@ -758,13 +818,14 @@ a[aria-current="page"] {
   gap: 1.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .bg-primary-default {
   --tw-bg-opacity: 1;
   background-color: rgb(26 42 71 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .p-10 {
@@ -776,18 +837,26 @@ a[aria-current="page"] {
 }
 
 .text-h1 {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.2;
 }
 
 .text-h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.3;
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:flex:hover {
+  display: flex;
+}
+
+.hover\:hidden:hover {
+  display: none;
 }
 
 .hover\:underline:hover {
@@ -809,4 +878,26 @@ a[aria-current="page"] {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+.group:hover .group-hover\:flex {
+  display: flex;
+}
+
+.group:hover .group-hover\:hidden {
+  display: none;
+}
+
+@media (min-width: 70rem) {
+  .custom\:flex {
+    display: flex;
+  }
+
+  .custom\:hidden {
+    display: none;
+  }
 }

@@ -1,6 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/partials/home.html"],
+  content: [
+    "./src/pages/home.html",
+    "./src/pages/Über_mich.html",
+    "./src/pages/Leistungen.html",
+    "./src/pages/Erfolge.html",
+    "./src/pages/Mandantenstimmen.html",
+    "./src/pages/Blog_News.html",
+  ],
   theme: {
     extend: {
       colors: {
@@ -24,11 +31,18 @@ module.exports = {
         // Optional: Akzentfarbe für CTAs oder Links
         accent: "#C49E2A", // etwas dunkleres Gold
       },
+      fontSize: {
+        h1: ["32px", { lineHeight: "1.2" }],
+        h2: ["24px", { lineHeight: "1.3" }],
+        p: ["18px", { lineHeight: "1.3" }],
+        btn: ["16px", { lineHeight: "1.3" }],
+      },
       fontFamily: {
         sans: ["Montserat", "ui-sans-serif", "system-ui"],
         serif: ["Merriweather", "ui-serif", "Georgia"],
       },
     },
   },
+
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };

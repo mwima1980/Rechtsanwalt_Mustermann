@@ -8,6 +8,7 @@ module.exports = {
     "./src/pages/Mandantenstimmen.html",
     "./src/pages/Blog_News.html",
     "./src/partials/header.html",
+    "./src/partials/footer.html",
   ],
   theme: {
     extend: {
@@ -45,8 +46,15 @@ module.exports = {
       screens: {
         custom: "70rem",
       },
+      scale: {
+        130: "1.3",
+      },
     },
   },
-
+  variants: {
+    extend: {
+      scale: ["hover", "group-hover"],
+    },
+  },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };

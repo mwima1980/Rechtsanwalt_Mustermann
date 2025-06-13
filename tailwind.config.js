@@ -44,7 +44,8 @@ module.exports = {
         serif: ["Merriweather", "ui-serif", "Georgia"],
       },
       screens: {
-        custom: "70rem",
+        "custom-md": "41.875rem",
+        "custom-xl": "70rem",
       },
       scale: {
         130: "1.3",

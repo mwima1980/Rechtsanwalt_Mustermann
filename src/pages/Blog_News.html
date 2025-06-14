@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de" class="bg-black">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
   <body>
     <!-- Header - Section -->
     <header class="sticky top-0 z-50 flex items-center justify-between bg-primary-default p-10 text-white">
-      <div class="flex gap-6">
+      <div class="flex items-center gap-6">
         <img class="h-16 w-16" src="/src/assets/images/icons/waage_fav.png" alt="Waage" />
         <div>
           <h1 class="font-sans text-h1">Dr. JUR. Max Mustermann</h1>
@@ -35,7 +35,7 @@
           </ul>
         </nav>
       </div>
-      <nav class="custom-xl:flex hidden">
+      <nav class="hidden custom-xl:flex">
         <ul class="flex gap-6">
           <li>
             <a class="hover:underline hover:underline-offset-4" href="/src/pages/home.html">Home</a>
@@ -50,5 +50,23 @@
         </ul>
       </nav>
     </header>
+    <!-- Footer - Section -->
+    <footer class="footer-section grid items-center justify-center bg-primary-default p-4 text-white custom-md:grid-cols-2 custom-md:p-10">
+      <div class="general-container">
+        <ul class="flex items-center gap-6">
+          <li><a class="hover:underline hover:underline-offset-4" href="/src/pages/Impressum.html">Impressum</a></li>
+          <li><a class="hover:underline hover:underline-offset-4" href="/src/pages/Datenschutz.html">Datenschutz</a></li>
+          <li><a class="hover:underline hover:underline-offset-4" href="/src/pages/AGB.html">AGB</a></li>
+          <li><a class="hover:underline hover:underline-offset-4" href="/src/pages/Kontakt.html">Kontakt</a></li>
+          <li><a class="hover:underline hover:underline-offset-4" href="/src/pages/FAQ.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="social-media-container mt-3 flex justify-center gap-6 custom-md:mt-0 custom-md:justify-end">
+        <a href="www.facebook.de"><img class="w-8 transition-transform hover:scale-130" src="/src/assets/images/icons/facebook.png" alt="Führt zur Facebookseite" /></a>
+        <a href="www.instagram.de"><img class="w-8 transition-transform hover:scale-130" src="/src/assets/images/icons/instagram.png" alt="Führt zur Instagramseite" /></a>
+        <a href="www.tiktok.com"><img class="w-8 transition-transform hover:scale-130" src="/src/assets/images/icons/tiktok.png" alt="Führt zur Tiktokseite" /></a>
+        <a href="www.twitter.com"><img class="w-8 transition-transform hover:scale-130" src="/src/assets/images/icons/twitter.png" alt="Führt zur Twitterseite" /></a>
+      </div>
+    </footer>
   </body>
 </html>

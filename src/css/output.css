@@ -839,6 +839,10 @@ a[aria-current="page"] {
   text-decoration-line: underline;
 }
 
+.hover\:underline-offset-2:hover {
+  text-underline-offset: 2px;
+}
+
 .hover\:underline-offset-4:hover {
   text-underline-offset: 4px;
 }

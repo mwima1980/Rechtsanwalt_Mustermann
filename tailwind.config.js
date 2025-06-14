@@ -34,8 +34,10 @@ module.exports = {
         accent: "#C49E2A", // etwas dunkleres Gold
       },
       fontSize: {
-        h1: ["2rem", { lineHeight: "1.2" }],
-        h2: ["1.5rem", { lineHeight: "1.3" }],
+        h1: ["3rem", { lineHeight: "1.2" }],
+        h2: ["2rem", { lineHeight: "1.3" }],
+        h3: ["1.5rem", { lineHeight: "1.3" }],
+        h4: ["1.3rem", { lineHeight: "1.3" }],
         p: ["1.125rem", { lineHeight: "1.3" }],
         btn: ["1rem", { lineHeight: "1.3" }],
       },

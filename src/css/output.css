@@ -762,12 +762,28 @@ a[aria-current="page"] {
   height: 4rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .w-16 {
   width: 4rem;
 }
 
 .w-8 {
   width: 2rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .items-center {
@@ -809,12 +825,22 @@ a[aria-current="page"] {
 }
 
 .text-h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.2;
 }
 
 .text-h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.text-h3 {
   font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.text-h4 {
+  font-size: 1.3rem;
   line-height: 1.3;
 }
 
@@ -837,10 +863,6 @@ a[aria-current="page"] {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-.hover\:underline-offset-2:hover {
-  text-underline-offset: 2px;
 }
 
 .hover\:underline-offset-4:hover {

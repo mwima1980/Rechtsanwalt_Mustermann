@@ -47,9 +47,49 @@
       </nav>
     </header>
     <!-- Hero - Section -->
-    <section class="bg-hero h-screen bg-cover bg-center"></section>
+    <main class="h-screen">
+      <section>
+        <div class="flex h-96 flex-col items-center justify-center gap-8 bg-hero bg-cover bg-center">
+          <h1 class="text-h1 text-white">Kompetent, Engagiert, Durchsetzungsstark</h1>
+          <p class="text-p text-white">Ich setze mich mit vollem Einsatz für Ihre Rechte ein</p>
+          <button type="submit" class="mb-20 rounded-lg bg-secondary-default p-4 uppercase hover:bg-[#bba460]">Kostenloses Erstgespräch</button>
+          <div class="absolute bottom-0 ml-auto mr-auto grid grid-cols-4 gap-6">
+            <a href="/src/pages/Über_mich.html">
+              <div class="flex w-72 flex-col items-center bg-background-muted p-6 transition-transform hover:scale-[1.1]">
+                <img src="/src/assets/images/icons/ueber_mich.png" alt="Weiterleitung zu Über mich" />
+                <h4 class="mt-2 text-h4">Über mich</h4>
+                <p class="mt-2 text-center">Erfahren Sie mehr über mein Werdegang und meine Philisophie</p>
+              </div>
+            </a>
+            <a href="/src/pages/Leistungen.html"
+              ><div class="flex w-72 flex-col items-center bg-background-muted p-6 transition-transform hover:scale-[1.1]">
+                <img src="/src/assets/images/icons/leistungen.png" alt="Weiterleitung zu meine Leistungen" />
+                <h4 class="mt-2 text-h4">Leistungen</h4>
+                <p class="mt-2 text-center">Sorgfältige Fallprüfung im gesamten Strafverfahren</p>
+              </div></a
+            >
+
+            <a href="/src/pages/Erfolge.html">
+              <div class="flex w-72 flex-col items-center bg-background-muted p-6 transition-transform hover:scale-[1.1]">
+                <img src="/src/assets/images/icons/erfolge.png" alt="Weiterleitung zu meine Erfolge" />
+                <h4 class="mt-2 text-h4">Erfolge</h4>
+                <p class="mt-2 text-center">Erfolgreiche Verteidigung in zahlreiche Verfahren</p>
+              </div>
+            </a>
+            <a href="/src/pages/Mandantenstimmen.html">
+              <div class="flex w-72 flex-col items-center bg-background-muted p-6 transition-transform hover:scale-[1.1]">
+                <img src="/src/assets/images/icons/feedback.png" alt="Weiterleitung zu Mandantenstimmen" />
+                <h4 class="mt-2 text-h4">Mandantenstimmen</h4>
+                <p class="mt-2 text-center">Das sagen meine Mandanten über meine Arbeit und Erfolge</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- Footer - Section -->
-    <footer class="footer-section grid items-center justify-center bg-background-default p-4 text-white custom-md:grid-cols-2 custom-md:p-10">
+    <footer class="footer-section fixed bottom-0 grid w-full items-center justify-center bg-background-default p-4 text-white custom-md:grid-cols-2 custom-md:p-10">
       <div class="general-container">
         <ul class="flex items-center gap-6">
           <li><a class="hover:underline hover:underline-offset-4" href="/src/pages/Impressum.html">Impressum</a></li>

@@ -28,7 +28,7 @@ module.exports = {
         // Hintergrundfläche
         background: {
           default: "#0F1A2B", // fast schwarzblau
-          muted: "#F5F7FA", // Grauton für weniger wichtige Farbe
+          muted: "#F9FBFE", // Grauton für weniger wichtige Farbe
         },
         // Optional: Akzentfarbe für CTAs oder Links
         accent: "#C49E2A", // etwas dunkleres Gold

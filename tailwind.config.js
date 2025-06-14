@@ -52,6 +52,9 @@ module.exports = {
       scale: {
         130: "1.3",
       },
+      backgroundImage: {
+        hero: "url('/src/assets/images/picture/heroPicture.png')",
+      },
     },
   },
   variants: {

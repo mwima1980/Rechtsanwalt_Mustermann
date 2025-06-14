@@ -762,6 +762,23 @@ a[aria-current="page"] {
   height: 3.5rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -799,6 +816,18 @@ a[aria-current="page"] {
 .bg-primary-default {
   --tw-bg-opacity: 1;
   background-color: rgb(26 42 71 / var(--tw-bg-opacity));
+}
+
+.bg-hero {
+  background-image: url('/src/assets/images/picture/heroPicture.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-10 {

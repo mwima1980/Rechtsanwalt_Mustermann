@@ -758,32 +758,16 @@ a[aria-current="page"] {
   display: none;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-14 {
   height: 3.5rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .w-14 {
   width: 3.5rem;
 }
 
-.w-12 {
-  width: 3rem;
+.w-8 {
+  width: 2rem;
 }
 
 .items-center {
@@ -800,6 +784,11 @@ a[aria-current="page"] {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.bg-background-default {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 26 43 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -822,16 +811,6 @@ a[aria-current="page"] {
 
 .font-sans {
   font-family: Montserat, ui-sans-serif, system-ui;
-}
-
-.text-h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-}
-
-.text-h2 {
-  font-size: 2rem;
-  line-height: 1.3;
 }
 
 .text-h3 {

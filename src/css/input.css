@@ -74,8 +74,126 @@ small {
   font-family: Merriweather;
   color: var(--color-text-white);
 }
+/* Header - Container */
+.header-container {
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 1rem;
+}
+.header-container-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0rem;
+}
+.header-container-links img {
+  display: none;
+  width: 6rem;
+  height: 3rem;
+}
 
+.headline-container h3 {
+  font-size: 1rem;
+  font-weight: 100;
+  text-wrap: nowrap;
+}
+.header-container h4 {
+  font-size: 0.75rem;
+  font-weight: 100;
+}
+
+.header-container-rechts img {
+  width: 2.5rem;
+}
+.header-container-rechts .nav-container-mobil ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 4.5rem;
+}
+.header-container-rechts img:hover {
+  cursor: pointer;
+}
+.header-container-rechts:hover .nav-container-mobil ul {
+  display: block;
+}
+.header-container-rechts .nav-container-mobil ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.75rem;
+}
+.header-container-rechts .nav-container-mobil ul li a:hover,
+.header-container-rechts .nav-container-mobil ul li a:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+}
+.nav-container-desktop ul {
+  gap: 1.5rem;
+}
+.nav-container-desktop ul {
+  list-style: none;
+}
+.nav-container-desktop ul li a {
+  text-decoration: none;
+  color: var(--color-text-white);
+}
+.header-container-rechts .nav-container-desktop ul li a:hover,
+.header-container-rechts .nav-container-desktop ul li a:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
 /* Media - Queries */
+
+@media (min-width: 320px) {
+  .nav-container-desktop ul {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .header-container-rechts .nav-container-mobil ul {
+    top: 3.3rem;
+  }
+}
+@media (min-width: 768px) {
+  .header-container-links img {
+    display: block;
+  }
+  .headline-container h3 {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .header-container h4 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .header-container-rechts img {
+    width: 3.5rem;
+  }
+  .header-container-rechts .nav-container-mobil ul li a {
+    font-size: 1rem;
+  }
+  .header-container-rechts .nav-container-mobil ul {
+    font-size: 1rem;
+    top: 4.3rem;
+  }
+  .nav-container-desktop ul {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .header-container-rechts img {
+    display: none;
+  }
+  .nav-container-mobil {
+    display: none;
+  }
+  .nav-container-desktop ul {
+    display: flex;
+  }
+}
 /* .container {
   width: 95%;
   padding-left: 1rem;

@@ -163,9 +163,10 @@ small {
   color: var(--color-text-white);
   font-size: 0.75rem;
 }
-.footer-container-links ul li a:hover {
+.footer-container-links ul li a:hover,
+.footer-container-links ul li a[aria-current="page"] {
   text-decoration: underline;
-  text-underline-offset: 0.15rem;
+  text-underline-offset: 0.25rem;
 }
 .footer-container-rechts {
   display: none;

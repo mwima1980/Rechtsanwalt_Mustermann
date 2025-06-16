@@ -146,6 +146,45 @@ small {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
+/* Footer - Section */
+.footer-container {
+  background-color: var(--color-primary-dark);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.footer-container-links ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.footer-container-links ul li a {
+  text-decoration: none;
+  color: var(--color-text-white);
+  font-size: 0.75rem;
+}
+.footer-container-links ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+}
+.footer-container-rechts {
+  display: none;
+}
+.footer-container-rechts ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.footer-container-rechts ul li a {
+  text-decoration: none;
+}
+.footer-container-rechts ul li a img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.footer-container-rechts ul li a img:hover {
+  transform: scale(1.2);
+}
 /* Media - Queries */
 
 @media (min-width: 320px) {
@@ -154,8 +193,24 @@ small {
   }
 }
 @media (min-width: 576px) {
+  /* Header - Section */
   .header-container-rechts .nav-container-mobil ul {
     top: 3.3rem;
+  }
+  /* Footer Section */
+  .footer-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .footer-container-links ul li a {
+    font-size: 1rem;
+  }
+  .footer-container-rechts {
+    display: flex;
+  }
+  .footer-container-rechts ul {
+    margin-top: 0.25rem;
   }
 }
 @media (min-width: 768px) {
@@ -183,6 +238,17 @@ small {
   .nav-container-desktop ul {
     display: none;
   }
+  /* Footer - Section */
+  .footer-container {
+    padding: 2rem;
+  }
+  .footer-container-rechts ul {
+    gap: 1.5rem;
+  }
+  .footer-container-rechts ul li a img {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 @media (min-width: 992px) {
   .header-container-rechts img {
@@ -193,6 +259,26 @@ small {
   }
   .nav-container-desktop ul {
     display: flex;
+  }
+  /* Footer - Section */
+  .footer-container {
+    padding: 2rem;
+  }
+  .footer-container-links {
+    margin-left: 1.5rem;
+  }
+  .footer-container-links ul li a {
+    font-size: 1.5rem;
+  }
+  .footer-container-rechts {
+    margin-right: 1.5rem;
+  }
+  .footer-container-rechts ul {
+    gap: 2.5rem;
+  }
+  .footer-container-rechts ul li a img {
+    width: 3rem;
+    height: 3rem;
   }
 }
 /* .container {

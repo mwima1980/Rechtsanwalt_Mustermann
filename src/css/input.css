@@ -126,9 +126,9 @@ small {
   font-size: 0.75rem;
 }
 .header-container-rechts .nav-container-mobil ul li a:hover,
-.header-container-rechts .nav-container-mobil ul li a:focus {
+.header-container-rechts .nav-container-mobil ul li a[aria-current="page"] {
   text-decoration: underline;
-  text-underline-offset: 0.15rem;
+  text-underline-offset: 0.1rem;
 }
 .nav-container-desktop ul {
   gap: 1.5rem;
@@ -140,8 +140,9 @@ small {
   text-decoration: none;
   color: var(--color-text-white);
 }
+
 .header-container-rechts .nav-container-desktop ul li a:hover,
-.header-container-rechts .nav-container-desktop ul li a:focus {
+.header-container-rechts .nav-container-desktop a[aria-current="page"] {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }

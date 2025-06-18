@@ -226,6 +226,35 @@ small {
   font-size: 0.75rem;
   text-align: center;
 }
+/* About - Me - Section */
+.about-us-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 3.5rem 2.5rem 3.75rem 2.5rem;
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+}
+.about-us-container img {
+  width: 10rem;
+  height: 10rem;
+}
+.vita-container h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1rem;
+}
+.vita-container p:nth-child(2) {
+  text-align: left;
+}
+.vita-container p:nth-child(3) {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
 /* Footer - Section */
 .footer-container {
   background-color: var(--color-primary);
@@ -374,6 +403,18 @@ small {
   .quote-teaser p {
     font-size: 1rem;
   }
+  /* About - Me - Section */
+  .about-us-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 3.5rem 2.5rem 3.75rem 0;
+    justify-items: center;
+    align-items: center;
+  }
+  .about-us-container img {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1.5rem;
+  }
   /* Footer - Section */
   .footer-container {
     padding: 2rem;
@@ -397,7 +438,10 @@ small {
   .nav-container-desktop ul {
     display: flex;
   }
-
+  /* About - Me -Section */
+  .vita-container p:nth-child(3) {
+    width: 60%;
+  }
   /* Footer - Section */
   .footer-container {
     padding: 2rem;
@@ -477,6 +521,10 @@ small {
   .teaser-box-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2.5rem;
+  }
+  /* About - Me - Section */
+  .vita-container {
+    margin-right: 3rem;
   }
 }
 /* .container {

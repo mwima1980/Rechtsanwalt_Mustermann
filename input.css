@@ -128,11 +128,15 @@ p {
   color: var(--color-text-white);
   font-size: 0.7rem;
 }
-.header-mobil-container li a:hover {
+.header-mobil-container li a:hover,
+.header-mobil-container li a[aria-current="page"] {
   text-decoration: underline;
 }
 .header-desktop-container {
   display: none;
+}
+.header-desktop-container li a[aria-current="page"] {
+  text-decoration: underline;
 }
 
 /* Hero - Section */

@@ -3,9 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strafverteidigung – Dr. Max Mustermann</title>
+    <title>AGB</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="shortcut icon" href="/src/assets/images/icons/scaleFav.svg" type="image/x-icon" />
   </head>
   <body>
+    <!-- Header - Section -->
+    <header class="header-section">
+      <div class="header-container-left">
+        <img src="/src/assets/images/icons/scale.svg" alt="Waage der Justitia" loading="lazy" />
+        <div class="header-brand-container">
+          <h1>Dr. Max Mustermann</h1>
+          <h2>Strafverteidiger</h2>
+        </div>
+      </div>
+      <div class="header-container-right">
+        <div class="burger-menu-container">
+          <button class="burger-btn" type="button" aria-label="Hauptnavigation öffnen" aria-expanded="false" aria-controls="main-navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img">
+              <title>Menü öffnen</title>
+              <rect y="4" width="24" height="2"></rect>
+              <rect y="11" width="24" height="2"></rect>
+              <rect y="18" width="24" height="2"></rect>
+            </svg>
+          </button>
+          <nav id="main-navigation" role="Navigation" aria-label="Hauptnavigation">
+            <ul class="header-mobil-container">
+              <li><a href="/src/pages/home.html">Home</a></li>
+              <li><a href="/src/pages/ueber_mich.html">Über mich</a></li>
+              <li><a href="/src/pages/Erfolge.html">Erfolge</a></li>
+              <li><a href="/src/pages/Leistungen.html">Leistungen</a></li>
+              <li><a href="/src/pages/Blog_News.html">Blog/News</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <nav role="Navigation" aria-label="Hauptnavigation">
+            <ul class="header-desktop-container">
+              <li><a href="/src/pages/home.html">Home</a></li>
+              <li><a href="/src/pages/ueber_mich.html">Über mich</a></li>
+              <li><a href="/src/pages/Erfolge.html">Erfolge</a></li>
+              <li><a href="/src/pages/Leistungen.html">Leistungen</a></li>
+              <li><a href="/src/pages/FAQ.html">FAQ</a></li>
+              <li><a href="/src/pages/Kontakt.html">Kontakt</a></li>
+              <li><a href="/src/pages/Blog_News.html">Blog/News</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
- 
+    <script src="/src/js/main.js"></script>
+    <!-- Footer - Section -->
+    <footer class="footer-container">
+      <div class="footer-container-left">
+        <ul class="lawyer-container">
+          <li><a href="/src/pages/Impressum.html">Impressum</a></li>
+          <li><a aria-current="page" href="/src/pages/AGB.html">AGB</a></li>
+          <li><a href="/src/pages/Datenschutz.html">Datenschutz</a></li>
+          <li><a href="/src/pages/Mandantenstimmen.html">Mandantenstimmen</a></li>
+        </ul>
+      </div>
+      <div class="footer-container-right">
+        <ul class="socialmedia-container">
+          <li>
+            <a href="https://www.facebook.de"><img src="/src/assets/images/icons/facebook.svg" alt="Zur Facebookseite" /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.de"><img src="/src/assets/images/icons/instagram.svg" alt="Zur Instagramseite" /></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com"><img src="/src/assets/images/icons/tiktok.svg" alt="Zur Tiktokseite" /></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com"><img src="/src/assets/images/icons/twitter.svg" alt="Zur Twitterseite" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

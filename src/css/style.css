@@ -47,7 +47,7 @@
 /* Typescaling */
 h1 {
   font-size: clamp(1rem, calc(1rem + 9.6 * ((100vw - 320px) / 1120)), 1.6rem);
-  font-weight: 100;
+  font-weight: 7000;
   line-height: 1.3;
   font-family: Montserrat;
   color: var(--color-text-white);
@@ -55,7 +55,7 @@ h1 {
 }
 h2 {
   font-size: clamp(0.8rem, calc(0.8rem + 8 * ((100vw - 320px) / 1120)), 1.3rem);
-  font-weight: 100;
+  font-weight: 600;
   line-height: 1.3;
   font-family: Merriweather;
   color: var(--color-text-white);
@@ -75,8 +75,16 @@ h4 {
   color: var(--color-text-white);
   margin: 0;
 }
+h5 {
+  font-size: clamp(1rem, calc(1rem + 8 * ((100vw - 320px) / 1120)), 1.5rem);
+  font-weight: 100;
+  font-family: Montserrat;
+  color: var(--color-text-white);
+  margin: 0;
+}
 p {
-  font-size: 1.125rem;
+  font-size: clamp(0.75rem, calc(0.75rem + 6 * ((100vw - 320px) / 1120)), 1.125rem);
+  line-height: 1.6;
   font-weight: 400;
   font-family: Merriweather;
   color: black;
@@ -130,7 +138,7 @@ p {
 }
 .header-mobil-container li a {
   text-decoration: none;
-  color: var(--color-text-white);
+  color: black;
   font-size: 0.7rem;
   position: relative;
   z-index: 1;
@@ -218,28 +226,56 @@ p {
 .teaser-container a:hover {
   transform: scale(1.1);
 }
-.about-me-container,
-.services-container,
-.success-container,
-.client-voices-container {
+.teaser-about-me-container,
+.teaser-services-container,
+.teaser-success-container,
+.teaser-client-voices-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
 }
-.about-me-container p,
-.services-container p,
-.success-container p,
-.client-voices-container p {
+.teaser-about-me-container p,
+.teaser-services-container p,
+.teaser-success-container p,
+.teaser-client-voices-container p {
   font-size: 0.75rem;
 }
-.about-me-container img,
-.services-container img,
-.success-container img,
-.client-voices-container img {
+.teaser-about-me-container img,
+.teaser-services-container img,
+.teaser-success-container img,
+.teaser-client-voices-container img {
   width: 1.5rem;
   height: auto;
+}
+.main-about-me-container {
+  display: grid;
+  padding: 2rem;
+  place-items: center;
+  gap: 1rem;
+}
+.picture-container img {
+  width: 5rem;
+  height: auto;
+}
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.about-me-container h2 {
+  color: black;
+}
+.quote-block-container {
+  background-color: var(--color-secondary);
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: clamp(1rem, calc(1rem + 4 * ((100vw - 320px) / 1120)), 1.25rem);
+  font-style: italic;
+  margin-top: 1rem;
 }
 /* Footer - Section */
 .footer-container {
@@ -276,7 +312,6 @@ p {
 .socialmedia-container li a img {
   width: clamp(1rem, 5vw, 1.5rem);
   height: auto;
-  background-color: transparent;
 }
 .socialmedia-container li a img:hover {
   transform: scale(1.2);
@@ -334,6 +369,15 @@ p {
   .client-voices-container p {
     font-size: 1rem;
   }
+  /* About - me - Section */
+  .main-about-me-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .picture-container img {
+    width: 20rem;
+    height: auto;
+  }
 }
 @media (min-width: 992px) {
   .header-container-left img {
@@ -387,6 +431,10 @@ p {
   .success-container p,
   .client-voices-container p {
     font-size: 1rem;
+  }
+  /* About - me - Section */
+  .main-about-me-container {
+    padding: 2.5rem 3.5rem 2.5rem 0;
   }
 }
 /* .container {
